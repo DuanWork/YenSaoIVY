@@ -33,6 +33,10 @@
 /* Mobile */
 @media (max-width: 740px)  {
 
+    html {
+        width: 1280px;
+    }
+
     #background {
         height: 80vh;
     }
