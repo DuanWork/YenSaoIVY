@@ -870,9 +870,7 @@ html {
 }
 
 .credit span {
-    border-radius: 20px;
-    border: 1px solid #F4EBBF;
-    padding: 0 4px;
+    font-size: 18px;
 }
 
 /* Footer section end */
