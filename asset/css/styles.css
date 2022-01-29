@@ -18,7 +18,8 @@ html {
 #header {
     background: #F4CD00;
     height: 100%;
-    min-width: 1280px;
+    width: 1280px;
+    min-width: 100%;
     top: 0;
     right: 0;
     left: 0;
@@ -280,8 +281,8 @@ html {
 
 #slider {
     background-color: #FFFEF5;
-    height: 100%;
-    min-width: 1280px;
+    width: 1280px;
+    min-width: 100%;
     top: 0;
     right: 0;
     left: 0;
@@ -295,7 +296,6 @@ html {
     margin: auto;
     padding: 25px 100px 0;
     justify-content: space-evenly;
-    min-width: 1280px;
 }
 
 .product-select {
@@ -389,8 +389,7 @@ html {
     padding: 10px;
 }
 
-.product-list { 
-    display: inline-block;
+.product-list {
     margin-left: 2%;
 }
 
@@ -404,11 +403,11 @@ html {
 }
 
 .product-col {
-    background: #DA251D;
     display: flex;
+    background: #DA251D;
     flex-wrap: wrap;
-    padding: 6px 0;
-    justify-content: space-around;
+    padding: 4px 0;
+    justify-content: center;
 }
 
 .product-frame {
@@ -457,7 +456,6 @@ html {
 /* Document Section Start */
  
 #document {
-    /* width: 100%; */
     width: 1080px;
     margin: auto;
     text-align: center;
@@ -529,6 +527,7 @@ html {
 /* Certify section start */
 #certify {
     position: relative;
+    height: 720px;
     width: 1080px;
     margin: auto;
     text-align: center;
@@ -546,7 +545,8 @@ html {
 
 #certify .certify-list {
     display: flex;
-    height: 60vh;
+    height: 320px;
+    width: 1080px;
     justify-content: center;
     align-items: center;
     margin: 30px 0;
@@ -558,27 +558,23 @@ html {
     /* height: 60vh;  */
 }
 
-.certify1 {
-    padding: 40px;
-    margin-left: -42%;
+.certify1 img {
+    margin-left: -280%;
 }
 
-.certify2 {
-    padding: 20px;
-    margin-left: -24%;
+.certify2 img {
+    margin-left: -150%;
 }
 
-.certify3 {
-    padding: 40px;
-    margin-left: 46%;
+.certify3 img {
+    margin-left: 140%;
 }
 
-.certify4 {
-    padding: 20px;
-    margin-left: 28%;
+.certify4 img {
+    margin-left: 84%;
 }
 
-.certify5 {
+.certify5 img {
     padding: 0;
     margin: auto;
 }
@@ -601,25 +597,27 @@ html {
 }
 
 /*  <!-- user -->  */
-
+/* user */
 #certify .user-seels {
     padding: 10px;
 }
 
-#user-comments {
-    display: inline-block;
-    height: 100%;
+/* #user-comments {
     margin: 10px 0;
+} */
+
+#user-comments,
+.user-comments .user {
+    display: flex;
+    justify-content: center;
 }
 
 .user {
-    float: left;
     padding: 8px 24px;
 }
 
 .user img {
-    /* position: absolute; */
-    height: 50px;
+    height: 8vh;
     border-radius: 25px;
 }
 
@@ -635,26 +633,17 @@ html {
 
 .user > p {
     font-size: 12px;
+    width: 400px;
     padding: 5px;
     border-radius: 3px;
     border: 1px solid #FFDE80;
     text-align: justify;
 }
 
-.user > p {
-    font-size: 12px;
-    width: 400px;
-    padding: 5px;
-    border-radius: 3px;
-    border: 1px solid #FFDE80;
-    text-align: justify;
-} 
-
-/* radio */
-
 .radio-btn {
+    position: absolute;
     text-align: center;
-    padding-bottom: 60px;
+    margin-top: 50px;
 }
 
 .radio-btn input[type=radio] {
@@ -673,7 +662,7 @@ html {
 
 #controls {
     width: 100%;
-    height: 40px;
+    height: 50px;
     z-index: 3;
     position: relative;
 }
@@ -682,12 +671,11 @@ html {
     transition: opacity 0.2s ease-out;
     display: none;
     width: 50px;
-    height: 40px;
+    height: 50px;
     opacity: .4;
 }
 
 #bullets {
-    margin: 60px 0 0;
     text-align: center;
 }
  
@@ -768,16 +756,16 @@ html {
 }
 /* Chevron-up section End */
 
-
 /* Footer section start */
 
 
 #footer {
     position: relative;
     background: #A81411;
-    min-width: 1280px;
+    width: 1280px;
+    min-width: 100%;
     height: 280px;
-    padding: 0 8%;  
+    margin-top: 24px;
 }
 
 .footer-nav {
@@ -787,6 +775,7 @@ html {
     margin: auto;
     align-items: center;
     justify-content: space-between;
+    width: 1080px;
 }
 
 .footer-list {
@@ -807,16 +796,17 @@ html {
 
 .footer-list .share {
     display: flex;
-    height: 36px;
-    width: 100%;
     justify-content: center;
 }
 
 .footer-list .share img {
     margin: 4px;
+    height: 36px;
+    width: 36px;
 }
 
 .footer-list li {
+    color: #F4EBBF;
     list-style: none;
     cursor: pointer;
 }
@@ -855,7 +845,7 @@ html {
     margin: auto;
     justify-content: space-between;
     border-bottom: 0.3px solid #FFBC00;
-    /* width: 1080px; */
+    width: 1080px;
 }
 
 .image p {
@@ -877,7 +867,7 @@ html {
     font-size: 12px;
     letter-spacing: 0.12em;
     text-align: center;
-    padding: 14px;
+    padding: 10px;
 }
 
 .credit span {
@@ -1035,7 +1025,7 @@ input::-moz-placeholder {
 } 
 
 #complete-payment {
-    width: 1058px; /*edit*/
+    width: 1080px; /*edit*/
     margin: auto;
     padding: 50px 0;
 }
