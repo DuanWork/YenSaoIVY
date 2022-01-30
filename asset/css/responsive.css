@@ -79,32 +79,44 @@
     #document,
     #slider,
     #header {
-        width: 740px;
+        width: 100%;
     }
 
     #link-more,
     #login {
-        margin: 0 2%;
+        margin: 0;
     }
 
+    #menu .search,
+    .search .logo-yen {
+        height: 60px;
+    }
+
+    .search .search-bar {
+        line-height: 60px;
+    }
     #menu {
         padding: 0 20px;
     }
 
     .search .logo-yen {
-        margin: 0 30px;
+        margin: 0;
     }
 
     .search .form {
-        width: 200px;
+        width: 120px;
+        font-size: 14px;
     }
 
     .search .heart-bag {
         margin-left: 10px;
     }
 
+    .heart-bag .fas
+    
     .nav-bars > a {
         display: none;
+        font-size: 18px;
     }
 
     .nav-bars {
@@ -248,10 +260,10 @@
         width: 250px;
     }
 
-    #chevron,
+    /* #chevron,
     #counsel {
         display: none;
-    }
+    } */
 
     /* -------- Footer -------- */
 
