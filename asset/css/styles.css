@@ -140,6 +140,11 @@ html {
     margin-left: 10px;
     cursor: pointer;
 }
+
+.heart-bag p a {
+    color: #FFFEF5;
+    text-decoration: none;
+}
 /* Search section end */
 
 /* Navigation section start */

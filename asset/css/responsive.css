@@ -78,24 +78,33 @@
     #document,
     #slider,
     #header {
-        width: 740px;
+        width: 100%;
     }
 
     #link-more,
     #login {
-        margin: 0 2%;
+        margin: 0 4%;
     }
 
-    #menu {
-        padding: 0 20px;
+    .heart-bag p,
+    #login p {
+        margin: 0;
+    }
+
+    #login > p > a {
+        display: none;
     }
 
     .search .logo-yen {
-        margin: 0 30px;
+        margin: 0 18px;
     }
 
     .search .form {
-        width: 200px;
+        width: 100px;
+    }
+
+    .heart-bag p a {
+        display: none;
     }
 
     .search .heart-bag {
@@ -103,7 +112,7 @@
     }
 
     .nav-bars > a {
-        display: none;
+        margin: 0 40px;
     }
 
     .nav-bars {
@@ -111,7 +120,7 @@
     }
 
     .nav-list {
-        width: 90%;
+        display: none;
     }
 
     .nav-list .fas {
@@ -122,7 +131,18 @@
         margin: 0px 20px;
     }
 
+    #commit {       
+        flex-wrap: wrap;
+    }
+
+    .list-commit {
+        width: 136px;
+    }
+
     /* -------- slider -------- */
+    #slider {
+        padding-bottom: 230px;
+    }
 
     #product {
         display: inline-block;
@@ -136,7 +156,7 @@
     .product-type {
         font-size: 24px;
         float: left;
-        width: 340px;
+        width: 120px;
     }
     
     .product-type p {
@@ -146,7 +166,7 @@
     .product-fast {
         margin-top: 0;
         float: right;
-        width: 340px;
+        width: 200px;
     }
 
     .product-list > p,
@@ -179,8 +199,8 @@
     }
 
     .product-frame > .far {
-        font-size: 30px;
-        padding: 18px;
+        font-size: 16px;
+        padding: 10px;
         border-radius: 50px;
         margin: 20px;
     }
@@ -218,23 +238,23 @@
 
     #certify,
     #certify .certify-list{
-        width: 720px;
+        width: 100%;
     }
 
     .certify1 img {
-        margin-left: -200%;
-    }
-    
-    .certify2 img {
         margin-left: -100%;
     }
     
+    .certify2 img {
+        margin-left: -50%;
+    }
+    
     .certify3 img {
-        margin-left: 100%;
+        margin-left: 42%;
     }
     
     .certify4 img {
-        margin-left: 50%;
+        margin-left: 25%;
     }
     
     .certify5 img {
@@ -243,14 +263,19 @@
     }
 
     .user > p {
-        height: 110px;
-        width: 250px;
+        height: 220px;
+        width: 120px;
     }
+
+    /* #certify #button {
+        position: absolute;
+    } */
 
     /* -------- Footer -------- */
 
     #footer {
-        width: 740px;
+        width: 100%;
+        /* display: none; */
     }
 
     .footer-nav {
@@ -263,19 +288,22 @@
         margin: 20px 20px 10px;
     }
 
+    .footer-logo {
+        margin: 0;
+    }
+
     .image {
         /* display: inline-block; */
         width: 100%;
+        padding: 0 16px;
     }
 
     .image p {
-        width: 200px;
-        margin: -90px 50px 0;
+        width: 170px;
     }
 
     .image img {
-        height: 40px;
-        margin: -60px 10px;
+        margin: -6px 0;
     }
 
     #background {
@@ -283,11 +311,11 @@
     }
 
     #slider > #counsel {
-        top: 44%;
+        top: 70%;
     }
 
     .radio-btn {
-        margin-top: 90px;
+        margin-top: 200px;
     }
 
     /* -------- acquired.html -------- */
@@ -312,7 +340,7 @@
     }
 
     .count > .btn {
-        width: 580px;
+        width: 214px;
         height: 80px;
     }
 
@@ -324,6 +352,6 @@
     }
 
     .count > .btn > a {
-        padding: 26px 190px;
+        padding: 14px;
     }
 }
