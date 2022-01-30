@@ -1,6 +1,6 @@
 
 /* PC */
-@media (min-width: 1282px){
+@media (min-width: 1380px) {
 
     .product-frame {
         width: 230px;
@@ -8,24 +8,67 @@
     } 
 }
 
+@media (min-width: 1282px) and (max-width: 1380px){
+
+    .product-frame {
+        width: 220px;
+        margin: 8px;
+    } 
+}
+
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1024px){
 
-    #menu .search {
-        width: 82%;
+    .search .logo-yen {
+        margin: 0 70px
+    }
+
+    .search-bar .form {
+        width: 300px;
+    }
+
+    .heart-bag {
+        margin-left: 30px;
     }
 
     #background {
         height: auto;
     }
 
-    /* #certify .certify-list  {
-        
-    } */
-    
     #background_one,
     #background_two {
         height: 30vh;
+    }   
+
+    #product {
+        padding: 25px 16px;
+    }
+
+    .product-frame {
+        width: 200px;
+    }
+
+    #document {
+        padding: 20px 16px;
+    }
+
+    #certify,
+    #certify .certify-list,
+    .footer-nav,
+    .image {
+        width: 1060px;
+    }
+
+    #billing {
+        padding: 100px 16px;
+    }
+
+    .payment-procedure {
+        padding: 0 16px 30px;
+    }
+
+    #complete-payment {
+        padding: 50px;
     }
     
 }
@@ -33,29 +76,264 @@
 /* Mobile */
 @media (max-width: 740px)  {
 
-    html {
-        width: 1280px;
+    #document,
+    #slider,
+    #header {
+        width: 740px;
+    }
+
+    #link-more,
+    #login {
+        margin: 0 2%;
+    }
+
+    #menu {
+        padding: 0 20px;
+    }
+
+    .search .logo-yen {
+        margin: 0 30px;
+    }
+
+    .search .form {
+        width: 200px;
+    }
+
+    .search .heart-bag {
+        margin-left: 10px;
+    }
+
+    .nav-bars > a {
+        display: none;
+    }
+
+    .nav-bars {
+        margin-left: 24px;
+    }
+
+    .nav-list {
+        width: 90%;
+    }
+
+    .nav-list .fas {
+        margin-left: 18px;
+    }
+
+    .nav-list > .list > li {
+        margin: 0px 20px;
+    }
+
+    /* -------- slider -------- */
+
+    #product {
+        display: inline-block;
+        padding: 25px 16px;
+    }
+
+    .product-select {
+        width: 100%;
+    }
+
+    .product-type {
+        font-size: 24px;
+        float: left;
+        width: 340px;
+    }
+    
+    .product-type p {
+        width: 100%;
+    }
+
+    .product-fast {
+        margin-top: 0;
+        float: right;
+        width: 340px;
+    }
+
+    .product-list > p,
+    .product-fast > p {
+        font-size: 24px;
+        width: 100%;
+    }
+
+    .product-type li {
+        padding: 20px;
+    }
+
+    .product-list {
+        margin-left: 0;
+        margin-top: 25px;
+    }
+
+    .product-frame {
+        width: 320px;
+        margin: 14px;
+    }
+
+    .product-frame > p {
+        font-size: 20px;
+        margin: 20px auto;
+    }
+
+    .product-frame > h3 {
+        font-size: 20px;
+    }
+
+    .product-frame > .far {
+        font-size: 30px;
+        padding: 18px;
+        border-radius: 50px;
+        margin: 20px;
+    }
+
+    /* -------- Document -------- */
+
+    #document {
+        padding: 20px 16px;
+    }
+
+    .bg-list {
+        width: 320px;
+    }
+
+    .bg-img {
+        width: 250px;
+    }
+
+    .bg-list > h3 {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    .bg-list .time-text,
+    .bg-list .guide-text > a {
+        font-size: 18px;
+    }
+
+    .bg-list .time-text {
+        padding: 30px;
+    }
+
+
+    /* -------- Document -------- */
+
+    #certify,
+    #certify .certify-list{
+        width: 720px;
+    }
+
+    .certify1 img {
+        margin-left: -200%;
+    }
+    
+    .certify2 img {
+        margin-left: -100%;
+    }
+    
+    .certify3 img {
+        margin-left: 100%;
+    }
+    
+    .certify4 img {
+        margin-left: 50%;
+    }
+    
+    .certify5 img {
+        padding: 0;
+        margin: auto;
+    }
+
+    .user > p {
+        height: 110px;
+        width: 250px;
+    }
+
+    #chevron,
+    #counsel {
+        display: none;
+    }
+
+    /* -------- Footer -------- */
+
+    #footer {
+        width: 740px;
+    }
+
+    .footer-nav {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .footer-list {
+        float: left;
+        margin: 20px 20px 10px;
+    }
+
+    .footer-list .signup {
+        /* display: inline-block; */
+    }
+
+    .image {
+        /* display: inline-block; */
+        width: 100%;
+    }
+
+    .image p {
+        width: 200px;
+        margin: -90px 50px 0;
+    }
+
+    .image img {
+        height: 40px;
+        margin: -60px 10px;
     }
 
     #background {
-        height: 600px;
-    }
-
-    #certify .certify-list  {
-        height: 320px;
+        height: auto;
     }
 
     #slider > #counsel {
         top: 44%;
     }
 
-    #footer {
-        min-width: 1280px;
-    }
-
     .radio-btn {
-        margin-top: 60px;
+        margin-top: 90px;
     }
-   
 
+    /* -------- acquired.html -------- */
+   
+    #billing {
+        display: inline-block;
+        width: 100%;
+        padding: 80px 50px;
+    }
+
+    .order {
+        margin-top: 80px;
+    }
+
+    li > input {
+        width: 100%;
+    }
+
+    .payment-procedure {
+        width: 100%;
+        padding: 0 50px 40px;
+    }
+
+    .count > .btn {
+        width: 580px;
+        height: 80px;
+    }
+
+    /* -------- complete.html -------- */
+
+    #complete-payment {
+        width: 100%;
+        padding: 50px;
+    }
+
+    .count > .btn > a {
+        padding: 26px 190px;
+    }
 }
