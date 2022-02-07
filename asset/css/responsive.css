@@ -5,6 +5,10 @@
         width: 230px;
         margin: 8px;
     } 
+
+    #link-more, #login {
+        margin: 0 12%;
+    }
 }
 
 @media (min-width: 1282px) and (max-width: 1380px){
@@ -185,24 +189,23 @@
     }
 
     .product-frame {
-        width: 320px;
-        margin: 14px;
+        width: 46%;
     }
 
     .product-frame > p {
-        font-size: 20px;
-        margin: 20px auto;
+        font-size: 10px;
+        margin: 6px auto;
     }
 
     .product-frame > h3 {
-        font-size: 20px;
+        font-size: 12px;
     }
 
     .product-frame > .far {
         font-size: 16px;
-        padding: 10px;
+        /* padding: 10px; */
         border-radius: 50px;
-        margin: 20px;
+        margin: 10px;
     }
 
     /* -------- Document -------- */
@@ -212,29 +215,39 @@
     }
 
     .bg-list {
-        width: 320px;
+        width: 46%;
+        margin: 4px;
+    }
+
+    .bg-list > p {
+        padding: 0;
+        font-size: 0;
     }
 
     .bg-img {
-        width: 250px;
+        width: 80%;
     }
 
     .bg-list > h3 {
-        font-size: 20px;
+        font-size: 12px;
         margin: 10px 0;
     }
 
     .bg-list .time-text,
     .bg-list .guide-text > a {
-        font-size: 18px;
+        font-size: 10px;
     }
 
-    .bg-list .time-text {
+    /* .bg-list .time-text {
         padding: 30px;
-    }
+    } */
 
 
     /* -------- Document -------- */
+
+    #certify {
+        height: 600px;
+    }
 
     #certify,
     #certify .certify-list{
@@ -242,28 +255,33 @@
     }
 
     .certify1 img {
+        height: 200px;
         margin-left: -100%;
     }
     
     .certify2 img {
+        height: 220px;
         margin-left: -50%;
     }
     
     .certify3 img {
+        height: 200px;
         margin-left: 42%;
     }
     
     .certify4 img {
+        height: 220px;
         margin-left: 25%;
     }
     
     .certify5 img {
+        height: 240px;
         padding: 0;
         margin: auto;
     }
 
     .user > p {
-        height: 220px;
+        /* height: 220px; */
         width: 120px;
     }
 
@@ -275,7 +293,6 @@
 
     #footer {
         width: 100%;
-        /* display: none; */
     }
 
     .footer-nav {
@@ -317,6 +334,33 @@
     .radio-btn {
         margin-top: 200px;
     }
+
+    #certify .certify-list {
+        height: 200px;
+    }
+
+    .user img {
+        height: 40px;
+    }
+
+    .user .cmt-1 {
+        margin-left: -40px;
+    }
+
+    .user .cmt-2 {
+        margin-right: -40px;
+    }
+
+    .fal {
+        font-size: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .footer-logo {
+        padding: 0;
+    }
+    
 
     /* -------- acquired.html -------- */
 

@@ -410,7 +410,7 @@ html {
     background: #DA251D;
     flex-wrap: wrap;
     padding: 4px 0;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .product-frame {
@@ -558,7 +558,6 @@ html {
 
 .certify1, .certify2, .certify3, .certify4, .certify5 {
     position: absolute;   
-    /* height: 60vh;  */
 }
 
 .certify1 img {
