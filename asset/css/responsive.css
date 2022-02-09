@@ -96,7 +96,12 @@
     }
 
     #menu {
-        height: 162px;
+        height: 132px;
+    }
+
+    #menu .search {
+        height: 70px;
+        width: 100%;
     }
 
     .nav {
@@ -109,12 +114,21 @@
         display: none;
     }
 
+    .search .logo-yen,
+    .search .heart-bag,
+    .search .search-bar,
+    #menu .search {
+        line-height: 70px;
+    }
+
     .search .logo-yen {
+        height: 70px;
         margin: 0 18px;
     }
 
     .search .form {
-        width: 100px;
+        font-size: 14px;
+        width: 120px;
     }
 
     .heart-bag p a {
@@ -125,14 +139,15 @@
         margin-left: 10px;
     }
 
-    .nav-bars > a,
     .nav-bars .fas {
-        font-size: 16px;
+        font-size: 18px;
         line-height: 30px;
     }
 
     .nav-bars > a {
+        line-height: 34px;
         margin: 0 40px;
+        font-size: 14px;
     }
 
     .nav-bars {
@@ -151,13 +166,13 @@
     }
 
     .nav-list > .list > li {
-        margin: 0px 6px;
-        font-size: 14px;
+        margin: 0px 8px;
+        font-size: 12px;
     }
 
     .nav-list > img {
         width: 20px;
-        margin: 8px 0;
+        margin: 8px 10px 0 0;
     }
 
     #commit {       
