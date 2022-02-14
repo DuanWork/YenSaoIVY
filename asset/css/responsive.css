@@ -1,16 +1,4 @@
 /* PC */
-@media (min-width: 1380px) {
-
-    .product-frame {
-        width: 230px;
-        margin: 8px;
-    } 
-
-    #link-more, #login {
-        margin: 0 12%;
-    }
-}
-
 @media (min-width: 1282px) and (max-width: 1380px){
 
     .product-frame {
@@ -96,7 +84,7 @@
     }
 
     #menu {
-        height: 132px;
+        height: 100px;
     }
 
     #menu .search {
@@ -156,7 +144,7 @@
     }
 
     .nav-list {
-        width: 100%;
+        /* width: 100%; */
         border-top-right-radius: 0;
     }
 
@@ -189,6 +177,7 @@
     }
 
     #product {
+        width: 100%;
         display: inline-block;
         padding: 25px 16px;
     }
@@ -351,7 +340,6 @@
     }
 
     .image {
-        /* display: inline-block; */
         width: 100%;
         padding: 0 16px;
     }
@@ -366,6 +354,7 @@
 
     #background {
         height: auto;
+        position: unset;
     }
 
     #slider > #counsel {

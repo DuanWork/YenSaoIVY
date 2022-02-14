@@ -30,9 +30,15 @@ html {
     border-right: 1px solid #A81411 !important;
 }
 
+.information,
+#top-list {
+    width: 1080px;
+    max-width: 100%;
+    margin: auto;
+}
+
 #link-more {
     display: inline-block;
-    margin: 0 8%;
 }
 
 #link-more li {
@@ -53,7 +59,6 @@ html {
     display: inline;
     float: right;
     line-height: 40px;
-    margin: 0 8%;
 }
 
 #login p {
@@ -294,10 +299,10 @@ html {
 /* Product section start */
 #product {
     display: flex;
-    width: 100%;
+    width: 1080px;
     color: #A81411;
     margin: auto;
-    padding: 25px 100px;
+    padding: 25px 0;
     justify-content: space-evenly;
 }
 
@@ -312,7 +317,7 @@ html {
 }
 
 .product-type p {
-    width: 152px;
+    width: 130px;
     margin-bottom: 8px;
     border-bottom: 1px solid #C2C2C2;
     padding-bottom: 4px;    
