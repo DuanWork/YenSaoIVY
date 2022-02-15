@@ -183,6 +183,7 @@ html {
     color: #A81411;
     font-size: 24px;
     line-height: 39px;
+    cursor: pointer;
 }
 
 .nav-list {

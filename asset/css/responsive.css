@@ -144,7 +144,8 @@
     }
 
     .nav-list {
-        /* width: 100%; */
+        display: none;
+        width: 50%;
         border-top-right-radius: 0;
     }
 
@@ -154,13 +155,14 @@
     }
 
     .nav-list > .list > li {
-        margin: 0px 8px;
+        float: unset;
+        /* margin: 0px 8px; */
         font-size: 12px;
     }
 
     .nav-list > img {
         width: 20px;
-        margin: 8px 10px 0 0;
+        margin: 4px;
     }
 
     #commit {       
