@@ -169,27 +169,90 @@ html {
     height: 38px;
 }
 
-.nav-bars > a {
+.nav-bars a {
     text-decoration: none;
     color: #A81411;
     font-size: 18px;
     font-weight: 650;
     line-height: 38px;
-    margin-left: 30px;
-    margin-right: 10px;
+    margin-left: 20px;
 }
 
-.nav-bars .fas {
-    color: #A81411;
-    font-size: 24px;
-    line-height: 39px;
+#subnav {
+    background-color: #A81411;
+    text-align: center;
+    margin: -2px;
+    display: none;
+    animation: navFaceIn ease 0.3s;
+}
+
+.nav-bars div {
+    float: right;
+    position: relative;
+}
+
+.nav-bars span {
+    background: #A81411;
+    width: 24px;
+    height: 4px;
+    border-radius: 5px;
+    display: inline-block;
+    position: absolute;
+    transform: translate(50%, 14px);
+    transition: transform 0.5s, width 0.5s;
+}
+
+.nav-bars .line-1 {
+    transform: translate(50%, 6px);
+} 
+
+.nav-bars .line-3 {
+    transform: translate(50%, 22px);
+} 
+
+.openmenu .line-1 {
+    transform: translate(50%, 14px) rotate(-45deg);
+}
+
+.openmenu .line-3 {
+    transform: translate(50%, 14px) rotate(45deg);
+}
+
+.openmenu .line-2 {
+    width: 0;
+}
+
+@keyframes navFaceIn {
+    from {
+        transform: translateY(-50px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+#subnav li {
+    color: #FFD627;
+    list-style: none;
+    padding: 8px;  
+    font-weight: 550;
+    border-bottom: 1px solid #F4EBBF;
+}
+
+#subnav li a {
+    color: #F4CD00;
+    font-size: 16px;
+    width: 20%;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .nav-list {
-    line-height: 38px;
+    height: 37px;
+    line-height: 37px;
     background-color: #A81411;
-    width: 74%;
+    width: 75%;
     float: right;
     border-top-right-radius: 25px;
 }
@@ -204,19 +267,23 @@ html {
 
 .nav-list > .list > li {
     float: left;
-    color: #FFFEF5;
     font-size: 18px;
     font-weight: 650;
     list-style: none;
     white-space: nowrap;
-    cursor: pointer;
     margin: 0 38px;
 }
 
+.list > li > a {
+    text-decoration: none;
+    list-style: none;
+    color: #FFFEF5;
+    cursor: pointer;
+}
+
 .nav-list > img {
-    line-height: 38px;
-    width: 34px;
-    margin: 2px 30px 0 0; 
+    width: 32px;
+    margin: 2px 30px 0 0;
 }
 
 /* Navigation section end */
@@ -224,7 +291,6 @@ html {
 /* Background section start */
 
 #background {
-    position: relative;
     background: url("./image/background.png") no-repeat;
     background-size: cover;
     background-position: 25% 25%;
@@ -588,7 +654,6 @@ html {
 }
 
 #certify #button {
-    /* position: absolute; */
     display: inline-block;
     color: #FFD627;
     font-size: 50px;
