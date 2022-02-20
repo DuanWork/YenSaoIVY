@@ -143,6 +143,16 @@
         height: 30px;
     }
 
+    .nav-bars div {
+        float: unset;
+    }
+
+    #subnav {
+        margin-top: -8px;
+        margin-left: 0;
+        width: 100%;
+    }
+
     .nav-list {
         display: none;
         width: 50%;

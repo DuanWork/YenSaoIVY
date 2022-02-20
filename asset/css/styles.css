@@ -169,6 +169,13 @@ html {
     height: 38px;
 }
 
+.nav-bars .fas {
+    color: #A81411;
+    font-size: 24px;
+    line-height: 39px;
+    cursor: pointer;
+}
+
 .nav-bars a {
     text-decoration: none;
     color: #A81411;
@@ -176,50 +183,24 @@ html {
     font-weight: 650;
     line-height: 38px;
     margin-left: 20px;
+    margin-right: 10px;
 }
 
+
 #subnav {
+    position: absolute;
     background-color: #A81411;
     text-align: center;
-    margin: -2px;
-    display: none;
+    margin-top: 37px;
+    margin-left: -2px;
+    width: 266px;
+    /* display: none; */
     animation: navFaceIn ease 0.3s;
 }
 
 .nav-bars div {
     float: right;
     position: relative;
-}
-
-.nav-bars span {
-    background: #A81411;
-    width: 24px;
-    height: 4px;
-    border-radius: 5px;
-    display: inline-block;
-    position: absolute;
-    transform: translate(50%, 14px);
-    transition: transform 0.5s, width 0.5s;
-}
-
-.nav-bars .line-1 {
-    transform: translate(50%, 6px);
-} 
-
-.nav-bars .line-3 {
-    transform: translate(50%, 22px);
-} 
-
-.openmenu .line-1 {
-    transform: translate(50%, 14px) rotate(-45deg);
-}
-
-.openmenu .line-3 {
-    transform: translate(50%, 14px) rotate(45deg);
-}
-
-.openmenu .line-2 {
-    width: 0;
 }
 
 @keyframes navFaceIn {
@@ -233,6 +214,7 @@ html {
 }
 
 #subnav li {
+    margin-top: -4px;
     color: #FFD627;
     list-style: none;
     padding: 8px;  
@@ -655,17 +637,20 @@ html {
 
 #certify #button {
     display: inline-block;
-    color: #FFD627;
-    font-size: 50px;
-    cursor: pointer;
     width: 100%;
 }
 
-#button #next{
+#button #next,
+#button #prev {
+    color: #FFD627;
+    cursor: pointer;
+    border: none;
     float: left;
+    font-size: 50px;
+    background: none;
 }
 
-#button #prev{
+#button #prev {
     float: right;
 }
 
@@ -679,8 +664,7 @@ html {
     margin: 10px 0;
 } */
 
-#user-comments,
-.user-comments .user {
+#user-comments {
     display: flex;
     justify-content: center;
 }

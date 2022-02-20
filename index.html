@@ -53,19 +53,17 @@
             <!-- Navigation section start-->
             <div class="nav">
                 <div class="nav-bars" id="nav-bars">
-                    <div><a id="btn1" href="#">danh mục sản phẩm</a>
-                            <div id="btn2">
-                                <span class="line-1"></span>
-                                <span class="line-2"></span>
-                                <span class="line-3"></span>
-                            </div>
-                        <ul id="subnav">
-                            <li><a href="#">Yến thô</a></li>
-                            <li><a href="#">Yến sơ chế</a></li>
-                            <li><a href="#">Yến nước</a></li>
-                            <li><a href="#">Yến huyết</a></li>
-                        </ul>
+                    <div>
+                        <a onclick="show_hide()" href="#">danh mục sản phẩm</a>
+                        <i onclick="show_hide()" class="fas fa-bars"></i>
                     </div>
+                    <ul id="subnav">    
+                        <li><a href="#">Yến thô</a></li>
+                        <li><a href="#">Yến sơ chế</a></li>
+                        <li><a href="#">Yến nước</a></li>
+                        <li><a href="#">Yến huyết</a></li>
+                        <li><a href="#">Yến tinh</a></li>
+                    </ul>
                 </div>
                 <div class="nav-list">
                     <i class="fas fa-home"></i>
@@ -290,8 +288,8 @@
                     <img src="./asset/img/certify5.png">
                 </div> 
                 <div id="button">
-                    <i id="next" class="fal fa-chevron-left"></i>
-                    <i id="prev" class="fal fa-chevron-right"></i>
+                    <button id="next" class="fal fa-chevron-left"></button>
+                    <button id="prev" class="fal fa-chevron-right"></button>
                 </div>         
             </div>
             
@@ -402,24 +400,6 @@
         <div class="credit">@Copyright <span>©</span> 2021 Yensaoivy.com</div>
     </section>
     <!-- Footer section end-->
-
-    <script>
-    
-    //Chuyển động ủa menu
-    var menu = document.getElementById("menu");
-
-    menu.onclick = function(){
-        menu.classList.toggle("openmenu");
-    }
-
-    //Nhận hành động click hiển thị màn hình
-    document.getElementById("btn1").onclick = function () {
-        document.getElementById("subnav").style.display = 'block';
-    };
-    document.getElementById("btn2").onclick = function () {
-        document.getElementById("subnav").style.display = 'none';
-    };
-
-    </script>
+    <script src="./asset/js/main.js" ></script>
 </body>
 </html>
