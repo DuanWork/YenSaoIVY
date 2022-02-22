@@ -66,13 +66,14 @@
                     </ul>
                 </div>
                 <div class="nav-list">
-                    <i class="fas fa-home"></i>
-                    <ul class="list">
+                    <i onclick="show_menu()" class="fas fa-home"></i>
+                    <ul id="list">
                         <li><a href="#">cửa hàng</a></li>
                         <li><a href="#">quà tặng</a></li>
                         <li><a href="#">dịch vụ</a></li>
                         <li><a href="#">liên hệ</a></li>
                     </ul>
+                    <i class="fa-solid fa-xmark"></i>
                     <img src="./asset/img/vietnam.png">
                 </div>                
             </div>
@@ -272,7 +273,7 @@
             <h3>GIẤY CHỨNG NHẬN CHẤT LƯỢNG CỦA YẾN SÀO IVY</h3>
             <b>Yến Sào IVY xin cam kết luôn cung cấp những sản phẩm chất lượng tốt nhất đến quý khách hàng  </b>
             <div class="container">
-                <div class="button" onclick="Left()"><img src="https://image.ibb.co/mRsEb7/left_arrow.png" alt=""></div>
+                <div class="button" onclick="Left()"><i id="next" class="fal fa-chevron-left"></i></div>
                 <div class="cards-wrapper">
                     <div class="cards__container">
                         <img class="box" src="./asset/img/certify1.png">
@@ -282,49 +283,64 @@
                         <img class="box" src="./asset/img/certify5.png">
                     </div>
                 </div>
-                <div class="button" onclick="Right()"><img src="https://image.ibb.co/dfPSw7/right_arrow.png" alt=""></div>
-            </div>    
-            <!-- <div class="certify-list">
-                <button id="next" onclick="Left()" class="fal fa-chevron-left"></button>
-                <img class="slider-img" src="./asset/img/certify1.png">
-                <img class="slider-img" src="./asset/img/certify2.png">
-                <img class="slider-img" src="./asset/img/certify3.png">
-                <img class="slider-img" src="./asset/img/certify4.png">
-                <img class="slider-img" src="./asset/img/certify5.png">
-                <button id="prev" onclick="Right()" class="fal fa-chevron-right"></button>
-            </div> -->
+                <div class="button" onclick="Right()"><i id="prev" class="fal fa-chevron-right"></i></div>
+            </div> 
             
             <!-- user -->
             <h3 class="user-feels">CẢM NHẬN CỦA KHÁCH HÀNG VỀ YẾN SÀO IVY </h3>
             <div id="user-comments">
-                <div class="user border">
-                    <p><img class="cmt-1" src="./asset/img/user1.png">
-                        Công việc của tôi khá bận rộn bên ngoài, mặc dù đã tiết giảm thời gian và khá cầu toàn trong việc chăm sóc con cái và gia đình. Nhưng tôi vẫn rất hài lòng với sản phẩm yến làm sạch của Yến Sào IVY vì chất lượng, độ nguyên chất và đặc biệt tiện lợi mỗi khi vào bếp.
-                    </p>
+                <div class="mySlides">
+                    <div class="user border">
+                        <p><img class="cmt-1" src="./asset/img/user1.png">
+                            Công việc của tôi khá bận rộn bên ngoài, mặc dù đã tiết giảm thời gian và khá cầu toàn trong việc chăm sóc con cái và gia đình. Nhưng tôi vẫn rất hài lòng với sản phẩm yến làm sạch của Yến Sào IVY vì chất lượng, độ nguyên chất và đặc biệt tiện lợi mỗi khi vào bếp.
+                        </p>
+                    </div>
+                    <div class="user">
+                        <p><img class="cmt-2" src="./asset/img/user2.png">
+                            Tôi được chồng mua yến trên Yensaoivy.com bồi bổ từ lúc mới có bầu đến lúc sinh. Tôi thực sự không tin được rằng sự hiệu quả của yến sào đến bất ngờ, tôi sinh rất nhanh, bé hồng hào và sạch. Cám ơn Yến Sào IVY!
+                        </p>
+                    </div>
                 </div>
-    
-                <div class="user">
-                    <p><img class="cmt-2" src="./asset/img/user2.png">
-                        Tôi được chồng mua yến trên Yensaoivy.com bồi bổ từ lúc mới có bầu đến lúc sinh. Tôi thực sự không tin được rằng sự hiệu quả của yến sào đến bất ngờ, tôi sinh rất nhanh, bé hồng hào và sạch. Cám ơn Yến Sào IVY!
-                    </p>
-               </div>
+                <div class="mySlides">
+                    <div class="user border">
+                        <p><img class="cmt-1" src="./asset/img/user3.png">
+                            Tôi được mọi người giới thiệt về Yensaoivy.com và tôi cũng mua cho vợ lúc mới sinh con. Tôi thực sự không tin được tằng hiệu quả cao đến vậy, bé vô cùng khỏe mạnh. Cám ơn Yến Sào IVY!
+                        </p>
+                    </div>
+                    <div class="user">
+                        <p><img class="cmt-2" src="./asset/img/user4.png">
+                            Tôi được chồng mua yến trên Yensaoivy.com bồi bổ từ lúc mới có bầu đến lúc sinh. Tôi thực sự không tin được rằng sự hiệu quả của yến sào đến bất ngờ, tôi sinh rất nhanh, bé hồng hào và sạch. Cám ơn Yến Sào IVY!
+                        </p>
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <div class="user border">
+                        <p><img class="cmt-1" src="./asset/img/user5.png">
+                            Công việc của tôi khá bận rộn bên ngoài, mặc dù đã tiết giảm thời gian và khá cầu toàn trong việc chăm sóc con cái và gia đình. Nhưng tôi vẫn rất hài lòng với sản phẩm yến làm sạch của Yến Sào IVY vì chất lượng, độ nguyên chất và đặc biệt tiện lợi mỗi khi vào bếp.
+                        </p>
+                    </div>
+                    <div class="user">
+                        <p><img class="cmt-2" src="./asset/img/user3.png">
+                            Tôi được mọi người giới thiệt về Yensaoivy.com và tôi cũng mua cho vợ lúc mới sinh con. Tôi thực sự không tin được tằng hiệu quả cao đến vậy, bé vô cùng khỏe mạnh. Cám ơn Yến Sào IVY!
+                        </p>
+                    </div>
+                </div>
                 <div class="radio-btn">
-                    <input type="radio" name="user" id="radio1" checked>  
+                    <input type="radio" name="user" id="radio1">  
                     <input type="radio" name="user" id="radio2">  
                     <input type="radio" name="user" id="radio3"> 
                     <div id="controls">
-                        <label for="radio1"></label>
-                        <label for="radio2"></label>
-                        <label for="radio3"></label>
+                        <span class="demo" onclick="currentDiv(1)"></span>
+                        <span class="demo" onclick="currentDiv(2)"></span>
+                        <span class="demo" onclick="currentDiv(3)"></span>
                      </div>
                     <div id="bullets">
-                        <label for="radio1"></label>
-                        <label for="radio2"></label>
-                        <label for="radio3"></label>
+                        <span class="demo" onclick="currentDiv(1)"></span>
+                        <span class="demo" onclick="currentDiv(2)"></span>
+                        <span class="demo" onclick="currentDiv(3)"></span>
                      </div> 
                 </div>          
             </div>
-       
         <!-- Certify section End -->
         
         <!-- Counsel section start-->
@@ -351,7 +367,7 @@
         </div>
         <!-- Chevron-up section End -->
     </section>
-    <!-- Slider section End-->
+    <!-- Slider section End -->
     
     <!-- Footer section start-->
     <section id="footer">

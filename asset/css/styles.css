@@ -247,7 +247,7 @@ html {
     margin-left: 34px;
 }
 
-.nav-list > .list > li {
+.nav-list > #list > li {
     float: left;
     font-size: 18px;
     font-weight: 650;
@@ -256,7 +256,7 @@ html {
     margin: 0 38px;
 }
 
-.list > li > a {
+#list > li > a {
     text-decoration: none;
     list-style: none;
     color: #FFFEF5;
@@ -599,12 +599,14 @@ html {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    max-width: 100%;
 }
 
 .container .button {
-    margin-left: 0 3%;
-    width: 2rem;
+    color: #FFD627;
     cursor: pointer;
+    border: none;
+    font-size: 50px;
 }
 
 .container .button--inactive {
@@ -625,21 +627,23 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 25rem;
+    height: 400px;
+    max-width: 100%;
 }
 
 .cards__container .box {
-    width: 12rem;
-    height: 20rem;
+    width: 200px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    z-index: 3;
 }
 
 .cards__container .box:nth-child(2n) {
     transform: scale(0.85);
-    z-index: -1;
+    z-index: 2;
 }
 
 .cards__container .box:nth-child(2) {
@@ -652,7 +656,7 @@ html {
 
 .cards__container .box:nth-child(4n + 1) {
     transform: scale(0.75);
-    z-index: -2;
+    z-index: 1;
 }
 
 .cards__container .box:nth-child(1) {
@@ -663,65 +667,16 @@ html {
   left: -15%;
 }
 
-.card__text-content {
-    text-align: center;
-    width: 75%;
-}
-
-.card__title {
-    padding: 1rem;
-}
-
-
-/* #certify .certify-list {
-    display: flex;
-    height: 320px;
-    width: 1080px;
-    justify-content: center;
-    align-items: center;
-    margin: 30px 0;
-    position: initial;
-}
-
-.certify1, .certify2, .certify3, .certify4, .certify5 {
-    position: absolute;   
-}
-
-#certify #button {
-    display: inline-block;
-    width: 100%;
-}
-
-#next,
-#prev {
-    color: #FFD627;
-    cursor: pointer;
-    border: none;
-    font-size: 50px;
-    background: none;
-} */
-
-/* #next {
-    float: left;
-}
-
-#prev {
-    float: right;
-} */
-
 /*  <!-- user -->  */
 /* user */
-#certify .user-seels {
-    padding: 10px;
-}
-
-/* #user-comments {
-    margin: 10px 0;
-} */
 
 #user-comments {
     display: flex;
     justify-content: center;
+}
+
+#user-comments .slider {
+    display: flex;
 }
 
 .user {
@@ -762,7 +717,7 @@ html {
     display: none;
 }
 
-.radio-btn label {
+.radio-btn span {
     cursor: pointer;
     text-decoration: none;
 }
@@ -779,7 +734,7 @@ html {
     position: relative;
 }
 
-#controls label {
+#controls span {
     transition: opacity 0.2s ease-out;
     display: none;
     width: 50px;
@@ -791,7 +746,7 @@ html {
     text-align: center;
 }
  
-#bullets label {
+#bullets span {
     display: inline-block;
     width: 10px;
     height: 10px;
@@ -800,10 +755,8 @@ html {
     margin: 0 2px;
 }
 
-#radio1:checked ~ #bullets label:nth-child(1),
-#radio2:checked ~ #bullets label:nth-child(2),
-#radio3:checked ~ #bullets label:nth-child(3){
-   background: #656565;
+#bullets span:hover{
+    background-color: #656565;
 }
 
 /* Certify section End */
@@ -990,7 +943,6 @@ html {
 /* Slide Thanh Toan  */
 
 #background_one {
-    position: relative;
     background: url("./image/background1.png") no-repeat;
     background-size: cover;
     background-position: 25% 25%;
@@ -1122,7 +1074,6 @@ input::-moz-placeholder {
 /* Slide Hoàn tất thanh toán */
 
 #background_two {
-    position: relative;
     background: url("./image/background2.png") no-repeat;
     background-size: cover;
     background-position: 25% 25%;

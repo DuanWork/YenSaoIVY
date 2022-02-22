@@ -52,18 +52,19 @@
 
             <!-- Navigation section start-->
             <div class="nav">
-                <ul class="nav-bars">
-                    <li><a href="#">danh mục sản phẩm  
-                            <i class="fas fa-bars"></i>
-                        </a>
-                        <ul id="subnav">
-                            <li><a href="#">Yến thô</a></li>
-                            <li><a href="#">Yến sơ chế</a></li>
-                            <li><a href="#">Yến nước</a></li>
-                            <li><a href="#">Yến huyết</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                <div class="nav-bars" id="nav-bars">
+                    <div>
+                        <a onclick="show_hide()" href="#">danh mục sản phẩm</a>
+                        <i onclick="show_hide()" class="fas fa-bars"></i>
+                    </div>
+                    <ul id="subnav">    
+                        <li><a href="#">Yến thô</a></li>
+                        <li><a href="#">Yến sơ chế</a></li>
+                        <li><a href="#">Yến nước</a></li>
+                        <li><a href="#">Yến huyết</a></li>
+                        <li><a href="#">Yến tinh</a></li>
+                    </ul>
+                </div>
                 <div class="nav-list">
                     <i class="fas fa-home"></i>
                     <ul class="list">
@@ -197,5 +198,6 @@
         <div class="credit">@Copyright <span>©</span> 2021 Yensaoivy.com</div>
     </section>
     <!-- Footer Section End-->
+    <script src="./asset/js/main.js" ></script>
 </body>
 </html>
