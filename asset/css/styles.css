@@ -239,7 +239,12 @@ html {
     border-top-right-radius: 25px;
 }
 
-.nav-list .fas {
+.nav-list .home_2 {
+    display: none;
+}
+
+.nav-list .home {
+    /* display: none; */
     float: left;
     line-height: 38px;
     color: #FFD627;
